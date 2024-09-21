@@ -1,23 +1,113 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Ignore node_modules for both frontend and backend
+node_modules/
+frontend/node_modules/
+backend/node_modules/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Ignore .env files
+.env
+frontend/.env
+backend/.env
 
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
+# Ignore log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+
+# Ignore coverage directory used by testing tools like Jest
+coverage/
+frontend/coverage/
+backend/coverage/
+
+# Ignore build directories
+build/
+dist/
+frontend/build/
+frontend/dist/
+backend/build/
+backend/dist/
+
+# Ignore temp files
+*.tmp
+*.swp
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore parcel-bundler cache (if you're using it)
+.cache/
+frontend/.cache/
+
+# Ignore Webpack/Babel specific files (if you're using them)
+frontend/.babelrc
+backend/.babelrc
+frontend/.webpack/
+backend/.webpack/
+
+# Ignore transpiled TypeScript files (if applicable)
+frontend/**/*.tsbuildinfo
+backend/**/*.tsbuildinfo
+
+# Ignore Python-related files (if Python scripts are present in your project)
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.whl
+*.egg
+*.egg-info/
+*.manifest
+*.spec
+
+# Ignore virtual environment for Python
+venv/
+frontend/venv/
+backend/venv/
+
+# Ignore Python IDEs configuration
+.mypy_cache/
+.pytest_cache/
+*.coverage
+.coverage.*
+.cache
+*.pylint.d/
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.log
+*.pot
+*.mo
+*.pyc
+.envrc
+env/
+
+# Ignore lock files (for both npm and yarn)
+package-lock.json
+yarn.lock
+frontend/package-lock.json
+frontend/yarn.lock
+backend/package-lock.json
+backend/yarn.lock
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore local environment settings
+frontend/.env.local
+backend/.env.local
+frontend/.env.development.local
+backend/.env.development.local
+frontend/.env.test.local
+backend/.env.test.local
+frontend/.env.production.local
+backend/.env.production.local
